@@ -1,0 +1,225 @@
+# Finnish translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-02-27 22:43+0000\n"
+"Last-Translator: Tomi Juntunen <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "Tavallinen"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "Ajastettu"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "Peli päättyi!"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr ""
+"Hyvin pelattu, mutta valitettavasti tuloksesi ei päässyt top-10 listalle."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "_Uusi peli"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr ""
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "Pelityyppi:"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "Onneksi olkoon!"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "Teit parhaan tuloksen!"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "Tuloksesi pääsi top-10 listalle."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+"Kerää niin paljon pisteitä kuin voit. Peli päättyy kun siirrot loppuvat."
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr "Kerää niin paljon pisteitä kuin voit, mutta aikaa on rajallisesti."
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr "Peli ei pääty koskaan. Pisteitäsi ei myöskään rekisteröidä."
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr ""
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr "Haluatko varmasti lopettaa pelin?"
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr "Haluatko tallentaa nykyisen pelisi?"
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Katja Viljakainen https://launchpad.net/~katja-viljakainen\n"
+"  Tomi Juntunen https://launchpad.net/~tojuntu"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "_Jatka"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "Tauko"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "Tauko"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr "Taso %d"
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr ""
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr "Uusi peli"
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr "Nimi"
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr "<span weight=\"bold\">Laudan koko</span>"
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr "<span weight=\"bold\">Äänet</span>"
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr "Suuri"
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr "Keskikokoinen"
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr ""
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr "Soita taustamusiikkia"
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr "Toista äänitehosteet"
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr "Asetukset"
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr ""
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "Pieni"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "_Peli"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "_Ohje"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr ""
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "_Asetukset"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr "Pelaa \"Diamond Mine\":n kaltaista pulmapeliä"
+
+#~ msgid "<span weight=\"bold\">Difficulty level</span>"
+#~ msgstr "<span weight=\"bold\">Vaikeustaso</span>"
+
+#~ msgid "Normal"
+#~ msgstr "Tavallinen"
+
+#~ msgid "Timed"
+#~ msgstr "Ajastettu"
+
+#, c-format
+#~ msgid "bonus x%d"
+#~ msgstr "bonus x%d"
+
+#~ msgid ""
+#~ "A GNOME port of the PalmOS/Windows/Java game \"Bejeweled\" (aka \"Diamond "
+#~ "Mine\")"
+#~ msgstr ""
+#~ "GNOME sovitus PalmOS/Windows/Java pelistä \"Bejeweled\" (tunnettu "
+#~ "aikaisemmin myös nimellä \"Diamond Mine\")"

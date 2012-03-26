@@ -1,0 +1,142 @@
+== 0.9.1 ==
+    Features:
+        * Show game-type choice at startup (alias welcome screen)
+          https://blueprints.launchpad.net/gweled/+spec/game-type-choice-at-startup
+    
+    Translations:
+        * New Slovenian [sl] translation (almost complete)
+        * Malay [ms] translation almost completed     
+        * Updated the others
+
+== 0.9 ==
+    Features:
+        * New endless game type (also called relax mode)
+        * Save and resume game between program closing
+        * Various new graphic effects
+        * Hint after 15 seconds of inactivity
+        * Added 22px and 64px application icons
+        * Level system (replace bonus-only target)
+
+    Bugs fixed:
+        * LP #578999: Fixed untranslatable strings in src/games-scores-dialog.c
+        * LP #345304: Gweled segfaults on sound initialization (with no audio devices)
+        * LP #614135: Gweled grabs /dev/dsp even if it doesn't play sounds
+
+    Translations:
+        * New Brazilian Portuguese [pt_BR] translation (almost complete)
+        * New Croatian [hr] translation (incomplete)
+        * New Dutch [nl] translation (complete)
+        * New Georgian [ka] translation (complete)
+        * New Hebrew [he] translation (almost complete)
+        * New Japanese [ja] translation (almost complete)
+        * New Malay [ms] translation (incomplete)
+        * New Polish [pl] translation (complete)
+        * New Ukrainian [uk] translation (almost complete)
+
+        * Updated French [fr] translation (complete)
+        * Updated German [de] translation (almost complete)
+        * Updated Italian [it] translation (complete)
+        * Updated Russian [ru] translation (complete)
+        * Updated Spanish [es] translation (complete)
+
+== 0.8 ==
+    Features:
+        * Pause support (LP #195206)
+        * Plain text config file (LP #563135)
+        * More application icons for launchers and menus (included SVG)
+        * Gweled translatable (gettext i18n support)
+        * Scores handling refactory
+        * Dropped deprecated libglade dependency (now use GtkBuilder)
+        * Dropped deprecated libgnomeui dependency
+        * Removed a lot of deprecated GTK+ symbols
+
+    Bugs fixed:
+        * LP  #30441: Pressing space removes menu (BonoboUI feature, deprecated)
+        * LP  #33578: Desktop file fixed, added right categories
+        * LP  #39181: Added -export-dynamic to gcc linker options
+        * LP  #90499: Gweled plays annoying sound which can't be switched off
+        * LP #201509: Get rid of .gweled file and follow fd.o specifications (now config file stored under $XDG_CONFIG_HOME)
+        * LP #217546: Menu is displaying in wrong locale
+        * LP #244064: High score incorrectly reported
+        * LP #244066: High score dismissed on mouse click on game
+        * LP #330640: Gweled Segmentation fault on abnormal tile values in config file
+        * Debian bug #280506: Unplayable on PowerPC (board matrix with gint instead gchar index type)
+        * Debian bug #401727: Disable MikMod disk writer driver
+        * Debian bug #401730: Double free on exit
+
+    Translations:
+        * New Italian translation (complete)
+        * New Russian translation (complete)
+        * New French translation (almost complete)
+        * New German translation (almost complete)
+        * New Spanish translation (almost complete)
+        * New Finnish translation (partially complete)
+        * New Turkish translation (incomplete)
+        * New Arabic translation (incomplete)
+
+    Notes:
+        Note that config file is now stored under ~/.config, so you must move
+        manually from home directory to new path and change file name from
+        ".gweled" to "gweled.conf".
+
+== 0.7 ==
+    Features:
+        * Remember config in a config file
+        * Music (Autonomus by Skaven, this mod was used in the original Bejeweled)
+        * Sound (pathetic wav found on the internet)
+        * Hiscore improvements (pops up when you enter highscore list) (Sean C. Nichols)
+        * New dependency: libmikmod (the sound engine)
+
+    Bugs fixed:
+        * Debian bug #286874: Fix for the timed game (reported by Sebastien Loss, fixed by Neil Moore)
+        * debug patch for GCC4 (Adrian Reber)
+
+== 0.6 ==
+    Features:
+        * display the timed hiscore table when in timed mode (this is a bit confusing since it's not visible anywhere that you are in timed mode).
+        * highlight the drop target when dragging
+        * updated the spec file.
+
+    Bugs fixed:
+        * almost fixed the hiscore files install bug (it's hardcoded to /var/games now, if your Gnome install is different, then move the 2 files where appropriate).
+        * fixed the hiscore table display when there are less than 10 entries recorded
+        * fixed a crash in the drag'n'drop code
+
+== 0.5 ==
+    * timed game
+    * drag'n drop to swap gems
+
+== 0.4 ==
+    * removed the toolbar (as suggested by Eugenia Loli-Queru)
+    * applied a preliminary patch for timed game (by David Meggy), not usable yet
+    * applied patch to unselect the selected gem (Pat Rondon)
+    * fixed a buffer overflow (first reported by Joseph Antrosio)
+    * switch to libglade
+    * provide a spec file (Marc Deslauriers)
+
+== 0.3 ==
+    * png icon for the window
+    * svg file for the cursor and the background tiles
+    * remove the unnecessary and intrusive "illegal move" message
+    * start new game by clicking anywhere in the game window
+    * bonus does not score insane amounts of points
+    * optimize board refresh routine (smoother animations)
+    * does not score when "hint" is used
+    * enable preferences
+    * instant-apply board size setting (SVG finally pays)
+    * do not loose before the first bonus
+
+== 0.2 ==
+    * first public release
+    * fix the score (1 small bug left though)
+    * move the score above the board
+    * add various in-game animations
+    * get rid of the windows, copyrighted, game graphics
+    * redraw all gems and switch to SVG
+    * optimize the graphic engine (don't redraw everything all the time !)
+    * rewrite the graphic engine (split the graphic core and the game engine)
+    * integrate properly with Gnome 2 (menu entry)
+
+== 0.1 ==
+    * private release for Laura
+    * the game works

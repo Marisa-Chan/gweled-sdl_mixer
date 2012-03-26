@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Gweled
+_Comment=Play a puzzle game similar to "Diamond Mine"
+Exec=gweled
+Icon=gweled
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;LogicGame;
+StartupNotify=true

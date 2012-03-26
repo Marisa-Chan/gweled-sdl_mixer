@@ -1,0 +1,244 @@
+# Ukrainian translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-01-31 18:40+0000\n"
+"Last-Translator: Ivo <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "Стандартний"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "З лімітом часу"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "Гру завершено!"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr "На жаль ваш результат замалий для попадання у десятку кращих."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "_Нова гра"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr "Таблиця рекордів Gweled"
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "Тип гри:"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "Поздоровляю!"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "Ваш результат - найкращий!"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "Ваш результат потрапив у десятку найкращих."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr ""
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr ""
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr "Це збережена гра, хочете її відновити?"
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr "Ви хочете скасувати цю гру?"
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr "Зберегти поточну гру?"
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"This is a dummy translation so that the credits are counted as translated.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Ivo https://launchpad.net/~van-hoi\n"
+"  Sergiy Gavrylov https://launchpad.net/~gavro"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "_Продовжити"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "Призупинено"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "_Пауза"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr "Рівень %d"
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr "Рахунок"
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr "Нова гра"
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr "Ім’я"
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr "<span weight=\"bold\">Розмір поля</span>"
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr "<span weight=\"bold\">Звук</span>"
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr "Великі"
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr "Середні"
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr "Призупинивши гру, ви можете повернутися до неї пізніше"
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr "Відтворювати фонову музику"
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr "Відтворювати звукові ефекти"
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr "Параметри"
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr "Очок:"
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "Маленькі"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "_Гра"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr "_Результати"
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "Н_алаштування"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr "Логічна гра схожа на \"Diamond Mine\""
+
+#~ msgid "time's up #"
+#~ msgstr "час минув #"
+
+#~ msgid "paused"
+#~ msgstr "призупинено"
+
+#~ msgid "no moves left #"
+#~ msgstr "ходів більше немає #"
+
+#, c-format
+#~ msgid "bonus x%d"
+#~ msgstr "бонус x%d"
+
+#~ msgid "<span weight=\"bold\">Difficulty level</span>"
+#~ msgstr "<span weight=\"bold\">Рівень складності</span>"
+
+#~ msgid "Normal"
+#~ msgstr "Стандартні"
+
+#~ msgid "Timed"
+#~ msgstr "Відтерміновано"
+
+#~ msgid ""
+#~ "A GNOME port of the PalmOS/Windows/Java game \"Bejeweled\" (aka \"Diamond "
+#~ "Mine\")"
+#~ msgstr ""
+#~ "Версія гри для GNOME «Bejeweled», портована з  PalmOS/Windows/Java (відома "
+#~ "як «Diamond Mine»)"
+
+#~ msgid "In this mode the game never ends, but scores will not be recorded!"
+#~ msgstr ""
+#~ "У цьому режимі гра ніколи не закінчується, але рахунок не буде записаний!"
+
+#~ msgid "Endless"
+#~ msgstr "Нескінченно"
+
+#~ msgid "<span weight=\"bold\">Game mode</span>"
+#~ msgstr "<span weight=\"bold\">Режим гри</span>"

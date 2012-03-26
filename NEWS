@@ -1,0 +1,68 @@
+0.7:
+----
+
+- Fixes for gcc4 (Adrian Reber)
+-
+
+0.6:
+----
+
+- almost fixed the hiscore files install bug (it's hardcoded to /var/games now, if your Gnome install is different, then move the 2 files where appropriate). I'll gladly accept patches to the install scripts to fix that definitely, thanks :-)
+- fixed the hiscore table display when there are less than 10 entries recorded
+- display the timed hiscore table when in hiscore mode. This is a bit confusing since it's not visible anywhere that you are in timed mode... maybe next time :-)
+- fixed a crash in the drag'n'drop code
+- highlight the drop target when dragging
+- updated the spec file. hope it works as I don't have a RedHat system anymore (Go Ubuntu !)
+
+0.5:
+----
+
+- timed game
+- drag'n drop to swap gems
+
+
+0.4:
+----
+
+- removed the toolbar (as suggested by Eugenia Loli-Queru)
+- apply a preliminary patch for timed game (by David Meggy), not usable yet
+- apply patch to unselect the selected gem (Pat Rondon)
+- fixed a buffer overflow for gentoo users (first reported by Joseph Antrosio)
+- switch to libglade
+- provide a spec file (Marc Deslauriers)
+
+
+0.3:
+----
+
+- png icon for the window
+- svg file for the cursor and the background tiles
+- remove the unnecessary and intrusive "illegal move" message
+- start new game by clicking anywhere in the game window
+- bonus does not score insane amounts of points
+- optimize board refresh routine (smoother animations)
+- does not score when "hint" is used
+- enable preferences
+- instant-apply board size setting (SVG finally pays)
+- do not lose before the first bonus
+
+
+0.2:
+----
+
+- first public release
+- fix the score (1 small bug left though)
+- move the score above the board
+- add various in-game animations
+- get rid of the windows, copyrighted, game graphics
+- redraw all gems and switch to SVG
+- optimize the graphic engine (don't redraw everything all the time !)
+- rewrite the graphic engine (split the graphic core and the game engine)
+- integrate properly with Gnome 2 (menu entry)
+
+
+0.1:
+----
+
+- private release for Laura
+- the game works

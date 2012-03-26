@@ -1,0 +1,250 @@
+# French translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-02-18 12:56+0000\n"
+"Last-Translator: Fabien LOISON (FLOZz) <flo@flogisoft.com>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "Contre la montre"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "Perdu !"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr ""
+"Bien joué, mais malheureusement votre score n'entre pas dans le top 10."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "_Nouvelle partie"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr "Scores Gweled"
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "Type de jeu :"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "Félicitations !"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "Vous avez fait le meilleur score !"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "Votre score est entré dans le top 10."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+"Obtenez autant de points que possible. La partie se termine lorsqu'il ne "
+"reste plus aucun mouvement possible."
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr "Obtenez autant de points que possible, mais en un temps limité."
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr "La partie ne se termine jamais. Le score n'est pas enregistré."
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr "Il existe une partie sauvegardée, voulez vous la continuer ?"
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr "Voulez-vous vraiment arrêter cette partie ?"
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr "Voulez-vous sauvegarder la partie en cours ?"
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Fabien LOISON (FLOZz) https://launchpad.net/~flozz\n"
+"  Ptitphysik https://launchpad.net/~amalpeyre\n"
+"  Thibault Févry https://launchpad.net/~thibaultfevry\n"
+"  Weegee https://launchpad.net/~weegee\n"
+"  zzz https://launchpad.net/~th-bertiez"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "_Reprendre"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "En pause"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "_Pause"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr "Niveau %d"
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr "Score"
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr "Nouvelle partie"
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr "Nom"
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr "<b>Sans fin</b>"
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr "<b>Normal</b>"
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr "<b>Contre la montre</b>"
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+"<span size=\"x-large\" weight=\"bold\">Bienvenue dans Gweled !</span>"
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr "<span weight=\"bold\">Taille du plateau</span>"
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr "<span weight=\"bold\">Son</span>"
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr "Grand"
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr "Moyen"
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr "Mettre le jeu en pause pour continuer plus tard"
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr "Jouer la musique de fond"
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr "Jouer les effets sonores"
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr "Préférences"
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr "Score :"
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "Petit"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "_Jeu"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "_Aide"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr "_Scores"
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "_Paramètres"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr "Jouer à un casse tête similaire à \"Diamond Mine\""
+
+#~ msgid "paused"
+#~ msgstr "en pause"
+
+#, c-format
+#~ msgid "bonus x%d"
+#~ msgstr "bonus x%d"
+
+#~ msgid "<span weight=\"bold\">Difficulty level</span>"
+#~ msgstr "<span weight=\"bold\">Niveau de difficulté</span>"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid ""
+#~ "A GNOME port of the PalmOS/Windows/Java game \"Bejeweled\" (aka \"Diamond "
+#~ "Mine\")"
+#~ msgstr ""
+#~ "Une adaptation pour GNOME du jeu \"Bejeweled\" (alias \"Diamond Mine\") "
+#~ "disponible sur PalmOS/Windows/Java game"
+
+#~ msgid "time's up #"
+#~ msgstr "temps écoulé #"
+
+#~ msgid "no moves left #"
+#~ msgstr "aucun mouvement restant #"
+
+#~ msgid "Timed"
+#~ msgstr "Contre la montre"
+
+#~ msgid "In this mode the game never ends, but scores will not be recorded!"
+#~ msgstr ""
+#~ "Dans ce mode le jeu ne s'arrête jamais, mais les points ne seront pas "
+#~ "enregistrés !"
+
+#~ msgid "Endless"
+#~ msgstr "Infini"
+
+#~ msgid "<span weight=\"bold\">Game mode</span>"
+#~ msgstr "<span weight=\"bold\">Mode de jeu</span>"

@@ -1,0 +1,120 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT([Gweled], [0.9.1], , gweled, [http://gweled.org])
+AM_INIT_AUTOMAKE()
+AM_MAINTAINER_MODE
+AM_CONFIG_HEADER(config.h)
+
+# Use AM_SILENT_RULES if present
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+
+dnl Initialize intltool
+GETTEXT_PACKAGE=gweled
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [GETTEXT package name])
+
+IT_PROG_INTLTOOL([0.40.0])
+AM_GLIB_GNU_GETTEXT
+
+#### Check for GTK+ >= 2.14 ####
+PKG_CHECK_MODULES(GTK, gtk+-2.0 >= 2.14,,
+	AC_MSG_ERROR([GTK+-2.14 is required to compile gweled]))
+
+AC_SUBST(GTK_CFLAGS)
+AC_SUBST(GTK_LIBS)
+
+#### Check for librsvg 2.0 ####
+PKG_CHECK_MODULES(RSVG, librsvg-2.0,,
+	AC_MSG_ERROR([librsvg-2.0 is required to compile gweled]))
+
+AC_SUBST(RSVG_CFLAGS)
+AC_SUBST(RSVG_LIBS)
+
+#### Check for mikmod.h header ####
+AC_CHECK_HEADER(mikmod.h,, AC_MSG_ERROR([libmikmod is required to compile gweled]))
+
+MIKMOD_CFLAGS=`libmikmod-config --cflags`
+MIKMOD_LIBS=`libmikmod-config --libs`
+AC_SUBST(MIKMOD_CFLAGS)
+AC_SUBST(MIKMOD_LIBS)
+
+AC_CHECK_HEADER(pthread.h, [],
+                  AC_MSG_ERROR([*** Cannot find pthread.h header]))
+AC_CHECK_LIB(pthread, pthread_create,
+                 [PTHREAD_LDFLAGS="$PTHREAD_LDFLAGS -lpthread"
+                  PTHREAD_CFLAGS="$PTHREAD_CFLAGS -D_REENTRANT"],
+                 [AC_CHECK_LIB(c_r, pthread_create,
+                               [PTHREAD_LDFLAGS="$PTHREAD_LDFLAGS -pthread"
+                                PTHREAD_CFLAGS="$PTHREAD_CFLAGS -D_THREAD_SAFE"],
+                 AC_MSG_ERROR([*** Cannot find pthread library]))])
+AC_SUBST(PTHREAD_CFLAGS)
+AC_SUBST(PTHREAD_LIBS)
+
+LIBS="$LIBS -export-dynamic"
+
+AC_ARG_ENABLE([setgid],
+  [AS_HELP_STRING([--disable-setgid],
+    [Disable the use of setgid binaries])],
+  [case "${enableval}" in
+    yes) setgid=true ;;
+    no)  setgid=false ;;
+    *) AC_MSG_ERROR([bad value ${enableval} for --disable-setgid]) ;;
+   esac],[setgid=true;enable_setgid=yes])
+
+scoredir='${localstatedir}/games'
+scores_group=games
+scores_user=games
+
+if test "$enable_setgid" = "yes"; then
+  AC_DEFINE([ENABLE_SETGID],[1],[Define if use of setgid binaries is enabled])
+
+  AC_ARG_WITH(scores-group,
+    AC_HELP_STRING([--with-scores-group=group],
+      [Group for the high score tables and binaries]),
+    scores_group="$withval",scores_group="games")
+  AC_ARG_WITH(scores-user,
+    AC_HELP_STRING([--with-scores-user=user],
+      [User for the high score tables]),
+    scores_user="$withval",scores_user="games")
+fi
+
+AM_CONDITIONAL([ENABLE_SETGID],[test "$enable_setgid" = "yes"])
+
+AC_SUBST(setgid)
+AC_SUBST(scores_group)
+AC_SUBST(scores_user)
+AC_SUBST(scoredir)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+data/Makefile
+po/Makefile.in
+])
+
+echo "
+Configuration:
+
+    Source code location:   ${srcdir}
+    Compiler:               ${CC}
+
+    Use setgid binaries:    $enable_setgid
+    Scores user:            $scores_user
+    Scores & setgid group:  $scores_group
+"
+
+if grep "$scores_group:" /etc/group > /dev/null; then
+:;
+else
+echo
+echo "Warning: The $scores_group group does not exist. Installation will"
+echo "         succeed, but high score logging will not work. To specify a"
+echo "         different group use the --with-scores-group option."
+echo
+fi
+

@@ -1,0 +1,240 @@
+# Hebrew translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-01-12 02:35+0000\n"
+"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "רגיל"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "קצוב בזמן"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "המשחק הסתיים!"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr ""
+"עבודה מעולה, אך למרבה הצער התוצאה שהשגת אינה מספיקה כדי להיכנס לעשרת הגדולים."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "משחק _חדש"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr "התוצאות של Gweled"
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "סוג המשחק:"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "כל הכבוד!"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "התוצאה שלך היא הגבוהה ביותר!"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "נכנסת לעשרת הגדולים."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr ""
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr ""
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr "ישנו משחק שמור, האם ברצונך לשחזר אותו?"
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr "האם ברצונך לבטל משחק זה?"
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr "האם ברצונך לשמור את המשחק הנוכחי?"
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"This is a dummy translation so that the credits are counted as translated.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Yaron https://launchpad.net/~sh-yaron"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "ה_משך"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "מושהה"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "ה_שהיה"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr "שלב %d"
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr "ניקוד"
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr "משחק חדש"
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr "שם"
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr "<span weight=\"bold\">גודל הלוח</span>"
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr "<span weight=\"bold\">צלילים</span>"
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr "גדול"
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr "בינוני"
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr "השהיית המשחק כדי שניתן יהיה לחזור אליו מאוחר יותר"
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr "נגינת מוזיקת רקע"
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr "נגינת אפקטים קוליים"
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr "העדפות"
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr ""
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "קטן"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "מ_שחק"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "ע_זרה"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr "_תוצאות"
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "ה_גדרות"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr "משחק פאזל הדומה ל\"מכרה היהלומים\""
+
+#~ msgid "paused"
+#~ msgstr "מושהה"
+
+#~ msgid ""
+#~ "A GNOME port of the PalmOS/Windows/Java game \"Bejeweled\" (aka \"Diamond "
+#~ "Mine\")"
+#~ msgstr ""
+#~ "מהדורה גנומית של המשחק \"Bejeweled\" (ידוע גם בשם \"מכרה היהלומים\") המיועד "
+#~ "ל־PalmOS/Windows/Java"
+
+#~ msgid "time's up #"
+#~ msgstr "נגמר הזמן #"
+
+#~ msgid "no moves left #"
+#~ msgstr "לא נותרו צעדים #"
+
+#, c-format
+#~ msgid "bonus x%d"
+#~ msgstr "בונוס כפול %d"
+
+#~ msgid "Endless"
+#~ msgstr "אינסופי"
+
+#~ msgid "<span weight=\"bold\">Game mode</span>"
+#~ msgstr "<span weight=\"bold\">מצב המשחק</span>"
+
+#~ msgid "In this mode the game never ends, but scores will not be recorded!"
+#~ msgstr "במצב זה המשחק לא מסתיים לעולם, אך התוצאות לא נשמרות!"
+
+#~ msgid "Timed"
+#~ msgstr "קצוב בזמן"
+
+#~ msgid "Normal"
+#~ msgstr "רגיל"

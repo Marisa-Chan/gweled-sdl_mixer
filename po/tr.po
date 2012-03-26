@@ -1,0 +1,216 @@
+# Turkish translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-01-12 04:41+0000\n"
+"Last-Translator: Daniele Napolitano <dnax88@gmail.com>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "Süreli"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "Oyun bitti!"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr ""
+"Çok iyi iş çıkardınız, ancak puanınız en iyi on listesinde yer bulamadı."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "_Yeni Oyun"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr ""
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "Oyun tipi:"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "Tebrikler!"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "En iyi skor sizinki!"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "Puanınız en iyi on listesine girdi."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr ""
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr ""
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr ""
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr ""
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr ""
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Daniele Napolitano https://launchpad.net/~dnax88\n"
+"  zeugma https://launchpad.net/~sunder67"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "_Devam Et"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "Duraklatıldı"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "_Duraklat"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr ""
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr ""
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr ""
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr ""
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr ""
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr ""
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr ""
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr ""
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr ""
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr ""
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr ""
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "Küçük"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "_Oyun"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "_Yardım"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr "_Puanlar"
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "_Ayarlar"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr ""
+
+#~ msgid "paused"
+#~ msgstr "duraklatıldı"
+
+#~ msgid "Highscores"
+#~ msgstr "Yüksek Puanlar"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Timed"
+#~ msgstr "Süreli"

@@ -1,0 +1,239 @@
+# Georgian translation for gweled
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gweled package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gweled\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-31 00:33+0200\n"
+"PO-Revision-Date: 2011-01-12 03:01+0000\n"
+"Last-Translator: Giorgi Maghlakelidze <acidlabz@gmail.com>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-03-31 09:28+0000\n"
+"X-Generator: Launchpad (build 12696)\n"
+
+#: ../src/main.c:65
+msgctxt "game type"
+msgid "Normal"
+msgstr "ჩვეულებრივი"
+
+#: ../src/main.c:66
+msgctxt "game type"
+msgid "Timed"
+msgstr "დროზე"
+
+#: ../src/main.c:280
+msgid "Game over!"
+msgstr "თამაში დასრულებულია!"
+
+#: ../src/main.c:282
+msgid "Great work, but unfortunately your score did not make the top ten."
+msgstr "კარგი შედეგია, მაგრამ საუკეთესო ათეულში ვერ მიაღწია."
+
+#: ../src/main.c:284
+msgid "_New Game"
+msgstr "_ახალი თამაში"
+
+#: ../src/main.c:296
+msgid "Gweled Scores"
+msgstr "Gweled ქულები"
+
+#: ../src/main.c:299
+msgid "Game type:"
+msgstr "თამაშის სახეობა:"
+
+#: ../src/main.c:306
+msgid "Congratulations!"
+msgstr "გილოცავთ!"
+
+#: ../src/main.c:307
+msgid "Your score is the best!"
+msgstr "თქვენი ქულები საუკეთესოა!"
+
+#: ../src/main.c:308
+msgid "Your score has made the top ten."
+msgstr "თქვენი ქულები საუკეთესო ათეულშია."
+
+#: ../src/main.c:397
+msgid "Get as many point as you can. The game ends if you out of moves."
+msgstr ""
+
+#: ../src/main.c:399
+msgid "Get as many points as you can, but you are limited on time."
+msgstr ""
+
+#: ../src/main.c:401
+msgid "Game will never end. Your scores will not be registered."
+msgstr ""
+
+#: ../src/main.c:461
+msgid "There is a game saved, do you want restore it?"
+msgstr "თქვენი თამაში შენახულია. გსურთ განაგრძოთ?"
+
+#: ../src/callbacks.c:74
+msgid "Do you really want to abort this game?"
+msgstr "დანამდვილებით გსურთ დაასრულოთ თამაში?"
+
+#: ../src/callbacks.c:139
+msgid "Do you want to save the current game?"
+msgstr "გსურთ მიმდინარე თამაშის შენახვა?"
+
+#: ../src/callbacks.c:173
+msgid "translator-credits"
+msgstr ""
+"This is a dummy translation so that the credits are counted as translated.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Giorgi Maghlakelidze https://launchpad.net/~dracid"
+
+#: ../src/callbacks.c:178
+msgid "A puzzle game with gems"
+msgstr ""
+
+#: ../src/board_engine.c:505
+msgid "_Resume"
+msgstr "_გაგრძელება"
+
+#: ../src/board_engine.c:508
+msgid "Paused"
+msgstr "შეჩერებული"
+
+#: ../src/board_engine.c:521 ../data/gweled.ui.h:17
+msgid "_Pause"
+msgstr "_შეჩერება"
+
+#: ../src/board_engine.c:829 ../src/board_engine.c:902
+#: ../src/board_engine.c:1004
+#, c-format
+msgid "Level %d"
+msgstr "დონე %d"
+
+#. Note that this assumes the default style is plain.
+#: ../src/games-scores-dialog.c:118 ../src/games-scores-dialog.c:545
+msgid "Score"
+msgstr "ქულა"
+
+#: ../src/games-scores-dialog.c:437
+msgid "New Game"
+msgstr "ახალი თამაში"
+
+#: ../src/games-scores-dialog.c:537
+msgid "Name"
+msgstr "სახელი"
+
+#. FIXME: There is basically no range checking.
+#: ../data/gweled.ui.h:1
+msgid "<b>Endless</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:2
+msgid "<b>Normal</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:3
+msgid "<b>Timed</b>"
+msgstr ""
+
+#: ../data/gweled.ui.h:4
+msgid "<span size=\"x-large\" weight=\"bold\">Welcome on Gweled!</span>"
+msgstr ""
+
+#: ../data/gweled.ui.h:5
+msgid "<span weight=\"bold\">Board size</span>"
+msgstr "<span weight=\"bold\">დაფის ზომა</span>"
+
+#: ../data/gweled.ui.h:6
+msgid "<span weight=\"bold\">Sound</span>"
+msgstr "<span weight=\"bold\">ხმა</span>"
+
+#: ../data/gweled.ui.h:7
+msgid "Large"
+msgstr "დიდი"
+
+#: ../data/gweled.ui.h:8
+msgid "Medium"
+msgstr "საშუალო"
+
+#: ../data/gweled.ui.h:9
+msgid "Pauses the game for you can return to it later"
+msgstr "თამაშს აჩერებს რათა შეგეძლოთ მისი მოგვიანებით გაგრძელება"
+
+#: ../data/gweled.ui.h:10
+msgid "Play background music"
+msgstr "ფონური მუსიკის დაკვრა"
+
+#: ../data/gweled.ui.h:11
+msgid "Play sound effects"
+msgstr "ხმის ეფექტების დაკვრა"
+
+#: ../data/gweled.ui.h:12
+msgid "Preferences"
+msgstr "გამართვა"
+
+#: ../data/gweled.ui.h:13
+msgid "Score:"
+msgstr "ქულები:"
+
+#: ../data/gweled.ui.h:14
+msgid "Small"
+msgstr "პატარა"
+
+#: ../data/gweled.ui.h:15
+msgid "_Game"
+msgstr "_თამაში"
+
+#: ../data/gweled.ui.h:16
+msgid "_Help"
+msgstr "_დახმარება"
+
+#: ../data/gweled.ui.h:18
+msgid "_Scores"
+msgstr "_ქულათა ჯამი"
+
+#: ../data/gweled.ui.h:19
+msgid "_Settings"
+msgstr "_გამართვა"
+
+#: ../data/gweled.desktop.in.h:1
+msgid "Play a puzzle game similar to \"Diamond Mine\""
+msgstr "ითამაშეთ \"Diamond Mine\"-ის მსგავსი თამაში"
+
+#~ msgid "time's up #"
+#~ msgstr "დრო გასულია #"
+
+#~ msgid "paused"
+#~ msgstr "შეჩერებული"
+
+#~ msgid ""
+#~ "A GNOME port of the PalmOS/Windows/Java game \"Bejeweled\" (aka \"Diamond "
+#~ "Mine\")"
+#~ msgstr ""
+#~ "PalmOS/Windows/Java პლატფორმებზე ცნობილი თამაშის \"Bejeweled\" (იგივე "
+#~ "\"Diamond Mine\") ვერსია GNOME გარემოსთვის"
+
+#~ msgid "no moves left #"
+#~ msgstr "სვლები ამოიწურა #"
+
+#, c-format
+#~ msgid "bonus x%d"
+#~ msgstr "საჩუქარი x%d"
+
+#~ msgid "Endless"
+#~ msgstr "უსასრულო"
+
+#~ msgid "<span weight=\"bold\">Game mode</span>"
+#~ msgstr "<span weight=\"bold\">თამაშის რეჟიმი</span>"
+
+#~ msgid "In this mode the game never ends, but scores will not be recorded!"
+#~ msgstr "ამ რეჟიმში თამაში არასოდეს სრულდება. ქულები, სამწუხაროდ, არ ინახება!"
+
+#~ msgid "Timed"
+#~ msgstr "დროზე"
+
+#~ msgid "Normal"
+#~ msgstr "ჩვეულებრივი"
