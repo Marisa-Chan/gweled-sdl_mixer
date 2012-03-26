@@ -9,7 +9,7 @@ INCLUDES = \
 AM_CFLAGS = 		  \
     @GTK_CFLAGS@      \
 	@RSVG_CFLAGS@	  \
-	@MIKMOD_CFLAGS@   \
+	@SDLMIXER_CFLAGS@   \
 	@PTHREAD_CFLAGS@
 
 bin_PROGRAMS = gweled
@@ -29,6 +29,6 @@ gweled_SOURCES = \
 	games-setgid-io.c games-setgid-io.h \
 	games-scores-dialog-private.h
 
-gweled_LDADD = @GTK_LIBS@ @RSVG_LIBS@ @MIKMOD_LIBS@ @PTHREAD_LIBS@
+gweled_LDADD = @GTK_LIBS@ @RSVG_LIBS@ @SDLMIXER_LIBS@ @PTHREAD_LIBS@
 
 

@@ -36,12 +36,12 @@ AC_SUBST(RSVG_CFLAGS)
 AC_SUBST(RSVG_LIBS)
 
 #### Check for mikmod.h header ####
-AC_CHECK_HEADER(mikmod.h,, AC_MSG_ERROR([libmikmod is required to compile gweled]))
+AC_CHECK_HEADER(SDL/SDL_mixer.h,, AC_MSG_ERROR([SDL_mixer is required to compile gweled]))
 
-MIKMOD_CFLAGS=`libmikmod-config --cflags`
-MIKMOD_LIBS=`libmikmod-config --libs`
-AC_SUBST(MIKMOD_CFLAGS)
-AC_SUBST(MIKMOD_LIBS)
+SDLMIXER_CFLAGS=`sdl-config --cflags`
+SDLMIXER_LIBS="`sdl-config --libs` -lSDL_mixer"
+AC_SUBST(SDLMIXER_CFLAGS)
+AC_SUBST(SDLMIXER_LIBS)
 
 AC_CHECK_HEADER(pthread.h, [],
                   AC_MSG_ERROR([*** Cannot find pthread.h header]))
