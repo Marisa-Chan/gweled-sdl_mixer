@@ -18,6 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
+#include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <librsvg/rsvg.h>
 
@@ -29,7 +30,8 @@ sge_load_svg_to_pixbuf (char *filename, int width,
 {
 	gchar *full_pathname;
 	GdkPixbuf *pixbuf = NULL;
-	GError *error;
+	GError *error = NULL;
+	GFile *file;
 
 	full_pathname = g_strconcat(DATADIR "/pixmaps/",
 	                            filename,
@@ -37,12 +39,24 @@ sge_load_svg_to_pixbuf (char *filename, int width,
 	if (g_file_test(full_pathname, G_FILE_TEST_IS_REGULAR)) {
 		pixbuf = rsvg_pixbuf_from_file_at_size (full_pathname, width,
 						   height, &error);
-		g_free (full_pathname);
+		if (pixbuf == NULL) {
+			// Some versions of librsvg need URI instead of path.
+			// https://gitlab.gnome.org/GNOME/librsvg/issues/198
+			g_clear_error (&error);
+			file = g_file_new_for_path (full_pathname);
+			g_free (full_pathname);
+			full_pathname = g_file_get_uri (file);
+			g_object_unref (file);
+			pixbuf = rsvg_pixbuf_from_file_at_size (full_pathname, width,
+							   height, &error);
+		}
 		if (pixbuf == NULL)
-			g_free (error);
+			g_error_free (error);
 
 	} else
 		g_warning ("%s not found", filename);
+
+	g_free (full_pathname);
 
 	return pixbuf;
 }
